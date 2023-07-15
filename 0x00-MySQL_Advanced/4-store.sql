@@ -1,11 +1,7 @@
 -- Creates trigger 
 
-DELIMITER $
-CREATE TRIGGER update_quantity
-BEFORE INSERT ON orders
+CREATE TRIGGER decrement
+AFTER INSERT
+ON orders
 FOR EACH ROW
-BEGIN
-    UPDATE items SET quantity = quantity - NEW.number
-    WHERE name=NEW.item_name;
-END$
-DELIMITER ;
+UPDATE items SET quantity = quantity - NEW.number WHERE NAME = NEW.item_name;

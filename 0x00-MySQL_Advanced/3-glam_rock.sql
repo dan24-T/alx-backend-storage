@@ -1,5 +1,5 @@
--- Selects bands with Glam Rock as their
--- style and ranks them by their longevity
+-- Select bands Glam Rock 
+
 SELECT band_name,
 IFNULL(split, 2022) - formed AS lifespan
 FROM metal_bands

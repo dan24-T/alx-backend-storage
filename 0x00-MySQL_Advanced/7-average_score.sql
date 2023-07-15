@@ -1,6 +1,5 @@
--- Creates procedure ComputeAverageScoreForUser
--- that computes and stores the average score of
--- a student
+-- Creates Comp
+
 DELIMITER $
 CREATE PROCEDURE ComputeAverageScoreForUser (IN user_id INT)
 BEGIN

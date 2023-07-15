@@ -1,5 +1,5 @@
--- Creates a procedure for AddBonus that adds a new correction
--- for a student
+-- Creates a procedure for AddBonus to students
+
 DELIMITER $
 CREATE PROCEDURE AddBonus(IN user_id INT, IN project_name CHAR(255), IN score INT)
 BEGIN

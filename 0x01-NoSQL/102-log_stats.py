@@ -9,12 +9,7 @@ from typing import Tuple
 
 def get_nginx_stats() -> Tuple:
     """
-    Queries nginx collection for specific data
-    - Returns:
-        - count of all documents
-        - count of each method in the collection
-        - count of each GET calls to /status path
-        - count of top 10 visited ips
+    Queries nginx
     """
     client: MongoClient = MongoClient()
     db = client.logs
